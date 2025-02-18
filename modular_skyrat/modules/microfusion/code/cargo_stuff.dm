@@ -70,3 +70,10 @@
 		/obj/item/food/pie/cream,
 	)
 	crate_name = "MCR-01 Military Attachments Crate Type H"
+
+/datum/supply_pack/goody/mcr01_single
+	name = "MCR-01 Single-Pack"
+	desc = "Micron Control Systems Incorporated supplied MCR-01 Microfusion weapons platform."
+	cost = PAYCHECK_COMMAND * 5
+	access_view = ACCESS_WEAPONS
+	contains = list(/obj/item/gun/microfusion/mcr01)

@@ -37,9 +37,9 @@
 	/// The microfusion lens used for generating the beams.
 	var/obj/item/ammo_casing/energy/laser/microfusion/microfusion_lens
 	/// The time it takes for someone to (tactically) reload this gun.
-	var/tactical_reload_time = 6 SECONDS
+	var/tactical_reload_time = 2 SECONDS
 	/// The time it takes for someone to normally reload this gun.
-	var/normal_reload_time = 4 SECONDS
+	var/normal_reload_time = 0 SECONDS
 	/// The sound played when you insert a cell.
 	var/sound_cell_insert = 'modular_skyrat/modules/microfusion/sound/mag_insert.ogg'
 	/// Should the insertion sound played vary?

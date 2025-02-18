@@ -192,7 +192,7 @@ Makes the gun shoot hellfire lasers.
 	icon_state = "attachment_hellfire"
 	attachment_overlay_icon_state = "attachment_hellfire"
 	heat_addition = 50
-	power_usage = 20
+	power_usage = 40
 	slot = GUN_SLOT_BARREL
 	projectile_override = /obj/projectile/beam/laser/microfusion/hellfire
 	new_fire_sound = 'modular_skyrat/modules/microfusion/sound/melt.ogg'
@@ -200,36 +200,31 @@ Makes the gun shoot hellfire lasers.
 /*
 REPEATER ATTACHMENT
 
-The gun can fire volleys of shots.
+The gun can fire armor penetrating projectiles.
 */
 /obj/item/microfusion_gun_attachment/barrel/repeater
 	name = "repeating phase emitter upgrade"
-	desc = "This barrel attachment upgrades the central phase emitter to fire off two beams in quick succession. While offering an increased rate of fire, the heat output and recoil rises too."
+	desc = "This barrel attachment upgrades the central phase emitter to fire off armor penetrating beams. This process generates more heat."
 	icon_state = "attachment_repeater"
 	attachment_overlay_icon_state = "attachment_repeater"
-	heat_addition = 40
+	heat_addition = 20
 	slot = GUN_SLOT_BARREL
-	spread_adjust = 15
-	recoil_adjust = 1
-	burst_to_add = 1
-	delay_to_add = 5
 	projectile_override = /obj/projectile/beam/laser/microfusion/repeater
 
 /*
 FOCUSED REPEATER ATTACHMENT
 
-The gun can fire volleys of shots that penetrate armor.
+The gun can fire armor penetrating projectiles.
 */
 
 /obj/item/microfusion_gun_attachment/barrel/repeater/penetrator
 	name = "focused repeating phase emitter upgrade"
-	desc = "A focused variant of the repeating phase controller. It allows the lasers to penetrate armor however this results in higher power usage."
+	desc = "This barrel attachment overclocks the central phase emitter to use more energy for beams, which penetrate most commonly available armor."
 	icon_state = "attachment_penetrator"
 	attachment_overlay_icon_state = "attachment_penetrator"
-	power_usage = 20
 	slot = GUN_SLOT_BARREL
 	projectile_override = /obj/projectile/beam/laser/microfusion/penetrator
-	power_usage = 80 // A price to pay to penetrate through armor
+	power_usage = 40 // A price to pay to penetrate through armor
 
 /*
 X-RAY ATTACHMENT

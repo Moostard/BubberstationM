@@ -51,7 +51,7 @@
 	name = "hellfire microfusion laser"
 	icon_state = "laser_greyscale"
 	wound_bonus = 0
-	damage = 25 // Basically a hellfire beam
+	damage = 30 // Basically a hellfire beam
 	speed = 0.6
 	color = LIGHT_COLOR_FLARE
 	light_color = LIGHT_COLOR_FLARE
@@ -65,11 +65,11 @@
 	damage = 45 // This damage is split into pellet amount
 
 /obj/projectile/beam/laser/microfusion/repeater
-	damage = 12.5
+	name = "focused microfusion laser"
+	armour_penetration = 30
 
 /obj/projectile/beam/laser/microfusion/penetrator
 	name = "focused microfusion laser"
-	damage = 20
 	armour_penetration = 50
 
 /obj/projectile/beam/laser/microfusion/lance
